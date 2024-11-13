@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- code a copier pour toute les activités (drawer) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ManualAddActivity"
+    android:orientation="vertical"> <!-- chemin vers l'activité -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- pour ajouter la toolbar
+
+    <include
+        layout="@layout/main_toolbar"/>
+
+     -->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/connect_pilulier"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="420dp"
+                android:layout_height="374dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.497">
+
+                <Button
+                    android:id="@+id/addPilulierButton"
+                    style="@style/ValidateButtonTheme"
+
+                    android:layout_width="210dp"
+                    android:layout_height="51dp"
+                    android:text="@string/ajouter_un_pilulier"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/retourButton"
+                    app:layout_constraintHorizontal_bias="0.465"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.851"
+                    tools:ignore="TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/retourButton"
+                    style="@style/ReturnButtonTheme"
+                    android:layout_width="135dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="48dp"
+                    android:text="@string/retour"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.919"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <EditText
+                    android:id="@+id/smartPillsIDTextView"
+                    android:layout_width="384dp"
+                    android:layout_height="56dp"
+                    android:hint="@string/smartpills_id"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:textColor="#000000"
+                    app:layout_constraintBottom_toTopOf="@+id/smartPillsPasswordTextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.444"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.635"
+                    tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/smartPillsPasswordTextView"
+                    android:layout_width="380dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="176dp"
+                    android:hint="@string/mot_de_passe_smartpills"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:textColor="#000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="TextContrastCheck" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!-- code a copier pour toute les activités (drawer) -->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white"></RelativeLayout>
+
+    <!-- Pour ajouter le drawer
+
+    <include layout="@layout/main_nav_drawer" />
+    -->
+</LinearLayout>
+
